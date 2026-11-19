@@ -1,0 +1,30 @@
+{
+  "name": "leetcode-tracker-mcp",
+  "version": "0.1.0",
+  "description": "MCP server for tracking LeetCode progress, attempts, goals and spaced repetition",
+  "type": "module",
+  "license": "MIT",
+  "private": true,
+  "bin": {
+    "leetcode-tracker-mcp": "dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "test": "npm run build && node --test test/tracker.test.mjs"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^24.19.2",
+    "typescript": "^7.0.2"
+  }
+}
